@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>CheckTableRow.qml</file>
+        <file>Test.qml</file>
+        <file>Home_win.qml</file>
+        <file>Checkouts_win.qml</file>
+        <file>Checkouts_Add_win.qml</file>
+        <file>Menu_buttons.qml</file>
+        <file>Checkouts_Details_win.qml</file>
+    </qresource>
+    <qresource prefix="/Checkout_Details_elements">
+        <file>Header.qml</file>
+        <file>GroupHeader.qml</file>
+        <file>CustomersTable.qml</file>
+    </qresource>
+    <qresource prefix="/js">
+        <file>js/ThemeApp.js</file>
+    </qresource>
+    <qresource prefix="/Customers">
+        <file>Customers_win.qml</file>
+        <file>CustomersTableRow.qml</file>
+    </qresource>
+</RCC>

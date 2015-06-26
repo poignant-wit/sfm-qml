@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/checkout">
+        <file>checkout.png</file>
+        <file>icons/homeButton.png</file>
+        <file>bg1.png</file>
+        <file>arrowToRight.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>icons/ICQ-icon.png</file>
+        <file>icons/Mail-icon.png</file>
+    </qresource>
+</RCC>
