@@ -16,19 +16,11 @@ FocusScope{
     signal clickedCenter
     signal clickedRight
 
-
+//выплывающее меню
 Rectangle{
-
-
     anchors.fill: parent
     color: "black"
-
     opacity: 0.7
-
-
-
-
-
 
     Image{
         id: centerIcon

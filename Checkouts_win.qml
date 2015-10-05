@@ -13,35 +13,47 @@ Item{
     signal clicked(int row)
 
 
-        ListView{
-            id: checkouts_list
-            anchors.rightMargin: 12
-            anchors.leftMargin: 12
-            anchors.bottomMargin: -4
-            anchors.topMargin: 20
-            anchors.fill: parent
-            spacing: 5
-            //interactive: false
+    StackView{
+        anchors.fill: parent
+        id: stack
+        initialItem:
+            checkouts_detail_win
 
-            model: check_model
-            delegate:
-
-
-                CheckTableRow{
-                id_text: id_checkout
-                date_text: date_checkout
-                title_text: title_checkout
-                customer_name_text: customer_name_checkout
-                customer_company_text: customer_company_checkout
-                row_height: height_slider.value
-                onClicked: {
-                    //console.log("ИНДЕКС" + index)
-                    checkout.clicked(index)
-                }
-            }
-        }
 
     }
+
+
+
+    ListView{
+        id: checkouts_list
+        anchors.rightMargin: 12
+        anchors.leftMargin: 12
+        anchors.bottomMargin: -4
+        anchors.topMargin: 20
+        anchors.fill: parent
+        spacing: 1
+
+        model: check_model
+        delegate:
+
+            CheckTableRow{
+            id_text: id_checkout
+            date_text: date_checkout
+            title_text: title_checkout
+            customer_name_text: customer_name_checkout
+            customer_company_text: customer_company_checkout
+            //row_height: height_slider.value
+            row_height: 30
+            onClicked: {
+                //console.log("ИНДЕКС" + index)
+                checkout.clicked(index)
+            }
+        }
+    }
+
+
+
+}
 
 
 

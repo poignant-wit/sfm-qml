@@ -23,7 +23,7 @@ Rectangle {
 
     width: parent.width
     height: row_height
-    radius: 10
+    radius: 2
 
     border.width: 2
     border.color: "transparent"

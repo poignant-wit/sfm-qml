@@ -52,11 +52,49 @@ Rectangle{
                                     anchors.fill: parent
                                 }
                             }
+            }
+    }
+    
+    
+   
+    
+    
+    Button {
+        id: customers_btn
+        x: 428
+        y: 322
+       
+        onClicked: root.clickedCheckouts()
+
+        style: ButtonStyle {
+                background: Rectangle {
+
+                    color: Theme.customerColMain
+                    implicitWidth: 250
+                    implicitHeight: 50
+                    border.width: 1
+                    border.color: "#888"
+                    radius: 4
+                }
+                label: Component {
+                                Text {
+                                    text: "ЗАКАЗЧИКИ"
+                                    clip: true
+                                    font.pixelSize: 32
+                                    color: "white"
+
+                                    wrapMode: Text.WordWrap
+                                    verticalAlignment: Text.AlignVCenter
+                                    horizontalAlignment: Text.AlignHCenter
+                                    anchors.fill: parent
+                                }
+                            }
 
             }
 
     }
 
+    
 
 
 
@@ -64,11 +102,17 @@ Rectangle{
 
 
 
+
+    
+    
+    
+    
+    
 
 
 
     Button {
-        id: customers_btn
+        id: cuustomers_btn
         x: 415
         y: 354
         text: qsTr("ЗАКАЗЧИКИ")

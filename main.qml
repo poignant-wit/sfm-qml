@@ -2,6 +2,7 @@ import QtQuick 2.4
 import QtQuick.Window 2.1
 import QtQuick.Controls 1.2
 import QtQuick.Dialogs 1.1
+import QtQuick.Layouts 1.1
 import "qrc:/Customers"
 
 
@@ -33,7 +34,7 @@ ApplicationWindow{
             onClicked: {
                 console.log("TEST BUTTON")
 
-                view1.add
+               // view1.add
                 check_model.addCheckout()
 
 
@@ -57,27 +58,69 @@ ApplicationWindow{
     }
 
 
-    StackView{
+
+
+
+
+
+//    //стэквью  с вариантом с хоум страницей
+
+//    StackView{
+//        anchors.fill: parent
+//        id: stack
+//        initialItem:
+//            Home_win{
+//            id: home
+//            onClickedCheckouts: {
+//               // stack.push(Qt.resolvedUrl("Checkouts_win.qml"))
+//                stack.push(checkouts_win)
+
+//                menuMouse.hoverEnabled = true
+//            }
+//            onClickedCustomers: {
+//                stack.push(customers_win)
+
+//                menuMouse.hoverEnabled = true
+//            }
+
+//        }
+//    }
+
+
+
+
+
+    SplitView {
         anchors.fill: parent
-        id: stack
-        initialItem:
-            Home_win{
-            id: home
-            onClickedCheckouts: {
-               // stack.push(Qt.resolvedUrl("Checkouts_win.qml"))
-                stack.push(checkouts_win)
+        orientation: Qt.Horizontal
 
-                menuMouse.hoverEnabled = true
+        Rectangle {
+            width: 200
+            Layout.maximumWidth: 400
+
+            color: "lightblue"
+            Text {
+                text: "View 1"
+                anchors.centerIn: parent
             }
-            onClickedCustomers: {
-                stack.push(customers_win)
-
-                menuMouse.hoverEnabled = true
-            }
-
         }
-    }
 
+        Checkouts_win{
+            Layout.fillWidth: true
+        }
+
+//        Rectangle {
+//            id: centerItem
+//            // Layout.minimumWidth: 50
+//            Layout.fillWidth: true
+//            color: "lightgray"
+//            Text {
+//                text: "View 2"
+//                anchors.centerIn: parent
+//            }
+//        }
+
+    }
     //        Component {
 //               id: myrec
 

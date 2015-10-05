@@ -12,7 +12,7 @@ Item{
             anchors.bottomMargin: -4
             anchors.topMargin: 20
             anchors.fill: parent
-            spacing: 5
+            spacing: 1
             //interactive: false
 
             model: customers_model

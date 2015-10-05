@@ -2,15 +2,17 @@ import QtQuick 2.0
 import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.0
 
-Item{
-    property string test_value: "value"
-    width: 160
+Rectangle{
+    width: 600
+    height: 600
+    color: "#000000"
 
-    height: 160
-
-    MouseArea{
-        anchors.left: parent.left
-        anchors.leftMargin: 17
-        onClicked: console.log(test_value)
+    SplitView {
+        id: splitView1
+        x: 0
+        y: 0
+        width: 319
+        height: 600
     }
+
 }

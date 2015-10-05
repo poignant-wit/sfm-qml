@@ -22,7 +22,7 @@ Rectangle {
     signal clicked(int index)
     width: parent.width
     height: row_height
-    radius: 10
+    radius: 2
 
 
 //    gradient: Gradient {
@@ -93,7 +93,7 @@ Rectangle {
     Image {
         id: icon
         source: "qrc:/checkout/checkout.png"
-        scale: 0.4
+        scale: 0.3
         anchors.verticalCenter: parent.verticalCenter
     }
 

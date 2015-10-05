@@ -155,19 +155,21 @@ void Checkout_model::addCheckout()
     record.append(QSqlField("PAYSTATUS", QVariant::String));
     record.append(QSqlField("STATUS", QVariant::String));
     //record.setValue("ID_CHECKOUT",2);
-    record.setValue("DATA","3");
+    record.setValue("TITLE","5");
+    record.setValue("DATA","5");
 
 
-    this->setData(this->createIndex(1, 1), QVariant("ttttttt"), Qt::EditRole);
-    this->submitAll();
+   // qDebug() << "ADD CHECKOUT MODEL";
+   // this->setData(this->createIndex(1, 1), QVariant("ttttttt"), Qt::EditRole);
+  //  this->submitAll();
 
-    //    this->insertRecord(-1, record);
+        this->insertRecord(-1, record);
 
-    //    if (this->submitAll()){
-    //        qDebug("SUBMITTED CORRECTLY");
-    //    }
+        if (this->submitAll()){
+            qDebug("SUBMITTED CORRECTLY");
+        }
 
-    //    qDebug() << "ADDCHECKOUT";
+        qDebug() << "ADDCHECKOUT";
 
 }
 
