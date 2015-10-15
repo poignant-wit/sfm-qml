@@ -35,7 +35,7 @@
 
 //public:
 
-//    enum AnimalRoles {
+//    enum AnimalRoles {√jjj√√kvv
 //            TypeRole = Qt::UserRole + 1,
 //            SizeRole
 //        };

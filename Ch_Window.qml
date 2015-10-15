@@ -1,7 +1,23 @@
 import QtQuick 2.0
 
-Rectangle {
-    width: 100
-    height: 62
-}
 
+
+
+
+
+El_StackView_Ver{
+    property variant items:[list.createObject()]
+
+
+    initialItem: items[0]
+
+
+    Component{
+        id: list
+        Ch_List{
+
+        }
+    }
+
+
+}

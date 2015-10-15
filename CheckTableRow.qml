@@ -22,7 +22,7 @@ Rectangle {
     signal clicked(int index)
     width: parent.width
     height: row_height
-    radius: 2
+   // radius: 2
 
 
 //    gradient: Gradient {

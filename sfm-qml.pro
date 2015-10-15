@@ -9,8 +9,7 @@ SOURCES += main.cpp \
     models/customers_model.cpp \
     models/dictors_model.cpp
 
-RESOURCES += qml.qrc \
-    icons.qrc
+RESOURCES += qml.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =

@@ -1,7 +1,14 @@
 import QtQuick 2.0
 
-Rectangle {
-    width: 100
-    height: 62
-}
+El_ListRow{
+    property string id
+    property string date
+    property string customer
 
+    rowHeight: 20
+
+    Text {
+        id: test
+        text: customer
+    }
+}

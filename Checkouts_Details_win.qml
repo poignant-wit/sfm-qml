@@ -10,11 +10,13 @@ Rectangle{
     id: root
     property int row
 
+
     signal clickedBack
 
-    width: parent.width
-    height: parent.height
-
+   // width: parent.width
+   // height: parent.height
+//height: 200
+//width: 50
     //    Rectangle {
     //        id: rectangle1
     //        width: 500
@@ -107,7 +109,9 @@ Rectangle{
         id: header
         bgColor: Theme.CheckoutColMain
         title_header: "ЗАКАЗ: " + check_model.getRow(row).id_checkout;
-        onClicked: root.clickedBack()
+        onClicked: {root.clickedBack(),
+                    console.log("BAAACK")
+        }
 
     }
 

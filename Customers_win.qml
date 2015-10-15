@@ -3,6 +3,7 @@ import QtQuick 2.0
 Item{
     id: customers
     signal clicked(int row)
+    signal test
 
 
         ListView{
@@ -12,6 +13,8 @@ Item{
             anchors.bottomMargin: -4
             anchors.topMargin: 20
             anchors.fill: parent
+
+            //anchors.left: parent.left
             spacing: 1
             //interactive: false
 
@@ -28,13 +31,15 @@ Item{
                 company_customer_pr: company_customer
                 telephone_customer_pr: telephone_customer
 
-                row_height: height_slider.value
+                row_height: 20
                 onClickedRow: {
                     //console.log("ИНДЕКС" + index)
                     checkout.clicked(index)
                 }
             }
         }
+
+        onTest: console.log("WORRRKKKSSS")
 
     }
 

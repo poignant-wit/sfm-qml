@@ -8,5 +8,26 @@
     <qresource prefix="/">
         <file>icons/ICQ-icon.png</file>
         <file>icons/Mail-icon.png</file>
+        <file>models/checkout_model.cpp</file>
+        <file>models/checkout_model.h</file>
+        <file>models/customers_model.cpp</file>
+        <file>models/customers_model.h</file>
+        <file>models/dictors_model.cpp</file>
+        <file>models/dictors_model.h</file>
+        <file>models/sqldata.cpp</file>
+        <file>models/sqldata.h</file>
+        <file>models/sqldatabase.cpp</file>
+        <file>models/sqldatabase.h</file>
+        <file>main.cpp</file>
+        <file>TEST ANIMATION/Comp 1/Comp 1_00000.png</file>
+        <file>TEST ANIMATION/Comp 1/Comp 1_00001.png</file>
+        <file>TEST ANIMATION/Comp 1/Comp 1_00002.png</file>
+        <file>TEST ANIMATION/Comp 1/Comp 1_00003.png</file>
+        <file>TEST ANIMATION/Comp 1/Comp 1_00004.png</file>
+        <file>TEST ANIMATION/Comp 1/Comp 1_00005.png</file>
+        <file>TEST ANIMATION/Comp 1/Comp 1_00006.png</file>
+        <file>TEST ANIMATION/Comp 1/Comp 1_00007.png</file>
+        <file>TEST ANIMATION/Comp 1/Comp 1_00008.png</file>
+        <file>TEST ANIMATION/Comp 1/Comp 1_00009.png</file>
     </qresource>
 </RCC>

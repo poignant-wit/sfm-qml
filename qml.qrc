@@ -8,6 +8,19 @@
         <file>Checkouts_Add_win.qml</file>
         <file>Menu_buttons.qml</file>
         <file>Checkouts_Details_win.qml</file>
+        <file>Main_win.qml</file>
+        <file>Button_tb.qml</file>
+        <file>Button_LeftPanel.qml</file>
+        <file>ComponentTest.qml</file>
+        <file>Ch_List.qml</file>
+        <file>El_Details.qml</file>
+        <file>El_ListRow.qml</file>
+        <file>Ch_Window.qml</file>
+        <file>El_StackView_Ver.qml</file>
+        <file>Ch_Details.qml</file>
+        <file>Ch_ListRow.qml</file>
+        <file>El_Menu.qml</file>
+        <file>El_IconMenu.qml</file>
     </qresource>
     <qresource prefix="/Checkout_Details_elements">
         <file>Header.qml</file>
