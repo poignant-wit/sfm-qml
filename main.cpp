@@ -3,12 +3,16 @@
 #include <QQmlContext>
 #include <QtCore>
 #include <QQuickView>
-#include "models/checkout_model.h"
-#include "models/customers_model.h"
+
 #include <QtGui>
 #include <QObject>
 #include "models/sqldatabase.h"
 #include "models/dictors_model.h"
+#include "models/sqlquerymodel.h"
+#include "models/orders_model.h"
+#include "models/checkout_model.h"
+#include "models/customers_model.h"
+
 
 //class MyClass : public QObject
 //{
@@ -58,18 +62,42 @@ int main(int argc, char *argv[])
 {
 
     SqlDatabase *myDb = new SqlDatabase();
-    Checkout_model *checkout_model = new Checkout_model(0, myDb->getMydb());
-    Customers_model *customer_model = new Customers_model(0, myDb->getMydb());
-    Dictors_model *dictors_model = new Dictors_model(0, myDb->getMydb());
+
+    Orders_model *orders_model = new Orders_model(0);
+   // SqlQueryModel *model1 = new SqlQueryModel(0);
+   // model1->setQuery("select * from checkout");
+    // model1->setQuery("select * from orders2 desc");
+
+
+
+
+   // Checkout_model *checkout_model = new Checkout_model(0, myDb->getMydb());
+   // Customers_model *customer_model = new Customers_model(0, myDb->getMydb());
+   // Dictors_model *dictors_model = new Dictors_model(0, myDb->getMydb());
+
     //checkout_model->select();
 
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
    // engine.rootContext()->setContextProperty("tttot", ttt);
-    engine.rootContext()->setContextProperty("check_model", checkout_model);
-    engine.rootContext()->setContextProperty("customers_model", customer_model);
-    engine.rootContext()->setContextProperty("dictors_model", dictors_model);
+   // engine.rootContext()->setContextProperty("check_model", checkout_model);
+
+   // engine.rootContext()->setContextProperty("customers_model", customer_model);
+  //  engine.rootContext()->setContextProperty("dictors_model", dictors_model);
+
+
+   // QmlApplicationViewer viewer;
+   // viewer.rootContext()->setContextProperty("myFirstModel", model1);
+
+
+
+    engine.rootContext()->setContextProperty("orders_model", orders_model);
+
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+
+
+
+
 
 
     //QQuickView view(QUrl::fromLocalFile("qrc:/main.qml"));

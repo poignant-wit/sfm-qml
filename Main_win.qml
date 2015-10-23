@@ -49,9 +49,9 @@ Item{
 
 
 
-//    ComponentTest{
+//    ComponentTest22{
 //        id: test
-//        Component.onCompleted: console.log("START COMPONENTTEST")
+//        Component.onCompleted: console.log("START ComponentTest22")
 //        list: Rectangle{
 
 //            height: 10
@@ -78,9 +78,9 @@ Item{
 //                    }
 //                }
 
-            ComponentTest{
+            ComponentTest22{
                 id: test
-                Component.onCompleted: console.log("START COMPONENTTEST")
+                Component.onCompleted: console.log("START ComponentTest22")
                 list: Rectangle{
 
                     height: 10

@@ -7,7 +7,9 @@ SOURCES += main.cpp \
     models/checkout_model.cpp \
     models/sqldata.cpp \
     models/customers_model.cpp \
-    models/dictors_model.cpp
+    models/dictors_model.cpp \
+    models/sqlquerymodel.cpp \
+    models/orders_model.cpp
 
 RESOURCES += qml.qrc
 
@@ -22,4 +24,6 @@ HEADERS += \
     models/checkout_model.h \
     models/sqldata.h \
     models/customers_model.h \
-    models/dictors_model.h
+    models/dictors_model.h \
+    models/sqlquerymodel.h \
+    models/orders_model.h

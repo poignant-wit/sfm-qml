@@ -10,10 +10,23 @@ Item{
     height: rowHeight
     width: parent.width
 
-    Text {
-        id: name
-        text: qsTr("text")
+    Rectangle{
+        height: rowHeight
+        width: parent.width
+    }
+
+//    Text {
+//        id: name
+//        text: qsTr("text")
+//        anchors.right: parent.right
+//    }
+
+    El_IconTriangle{
         anchors.right: parent.right
+        anchors.verticalCenter: parent.verticalCenter
+        onClicked: clickDetails()
+       // x:500
+
     }
 
     //color: "blue"

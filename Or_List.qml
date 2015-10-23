@@ -5,6 +5,7 @@ import QtQuick.Controls 1.3
 
 
 ScrollView{
+    signal clickRowDetails(int row)
 
     ListView{
         id: checkouts_list
@@ -16,10 +17,17 @@ ScrollView{
         anchors.left: parent.left
         spacing: 1
 
-        model: check_model
+        model: orders_model
         delegate:
-            Ch_ListRow{
-            customer: title_checkout
+            Or_ListRow{
+            order_row_id: order_id
+            order_row_date: order_date
+            order_row_title: order_title
+            payment_row_value: payment_value
+            onClickDetails: {
+                console.log(index)
+                clickRowDetails(index)
+            }
 
         }
 

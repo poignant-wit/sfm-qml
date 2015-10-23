@@ -5,7 +5,7 @@ Canvas{
     width: 256
     height: 256
 
-
+    signal clickButton
     property bool arrowFormState: false
     function toggle() {
         console.log("TOGGLE FUNCTION")
@@ -17,7 +17,7 @@ Canvas{
 
     states: State {
         when: arrowFormState
-        PropertyChanges { angle: Math.PI; target: canvas }
+        PropertyChanges { angle: Math.PI*0.5; target: canvas }
     }
 
     State {
@@ -76,7 +76,10 @@ Canvas{
     MouseArea{
         width: parent.width
         height: parent.height
-        onClicked: toggle()
+        onClicked: {
+            clickButton()
+            toggle()
+        }
     }
 
 }

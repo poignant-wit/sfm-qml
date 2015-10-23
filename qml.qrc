@@ -11,16 +11,21 @@
         <file>Main_win.qml</file>
         <file>Button_tb.qml</file>
         <file>Button_LeftPanel.qml</file>
-        <file>ComponentTest.qml</file>
-        <file>Ch_List.qml</file>
+        <file>Or_List.qml</file>
         <file>El_Details.qml</file>
         <file>El_ListRow.qml</file>
-        <file>Ch_Window.qml</file>
-        <file>El_StackView_Ver.qml</file>
-        <file>Ch_Details.qml</file>
-        <file>Ch_ListRow.qml</file>
+        <file>El_StackView_Hor.qml</file>
+        <file>Or_Details.qml</file>
+        <file>Or_ListRow.qml</file>
         <file>El_Menu.qml</file>
         <file>El_IconMenu.qml</file>
+        <file>El_IconTriangle.qml</file>
+        <file>Or_Window.qml</file>
+        <file>ComponentTest.qml</file>
+        <file>El_Toolbar.qml</file>
+        <file>El_Toolbar_Left.qml</file>
+        <file>Cs_Window.qml</file>
+        <file>EL_Label.qml</file>
     </qresource>
     <qresource prefix="/Checkout_Details_elements">
         <file>Header.qml</file>
